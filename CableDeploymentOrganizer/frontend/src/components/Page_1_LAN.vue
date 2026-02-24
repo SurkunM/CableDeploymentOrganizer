@@ -4,12 +4,13 @@
         <table class="table table-bordered table-hover table-striped text-center table-fixed">
             <thead class="table-dark">
                 <tr>
-                    <th style="width: 5%;">Дата</th>
+                     <th style="width: 5%;">Дата</th>
                     <th style="width: 15%;">Адрес</th>
+                    <th style="width: 10%;">Кабинет</th>
                     <th style="width: 40%;">Описание работы</th>
                     <th style="width: 10%;">Состояние</th>
                     <th style="width: 10%;">Автор</th>
-                    <th style="width: 15%;">Подробнее</th>
+                    <th style="width: 10%;">Подробнее</th>
                 </tr>
             </thead>
             <tbody>
@@ -34,8 +35,8 @@
         data() {
             return {
                 lanWorks: [
-                    { date: "12.12.2026", adress: "Kommunisticheskiy 120", description: "Монтаж монтаж Монтаж монтаж Монтаж монтаж Монтаж монтаж Монтаж монтаж Монтаж монтаж Монтаж монтаж Монтаж монтаж Монтаж монтаж Монтаж монтаж Монтаж монтаж ", state: "Выполняеться", author: "Ivanov A.V" },
-                    { date: "12.12.2026", adress: "Choros-Gurkina 4", description: "Смонтировапть много много ыфоарыивариуриари арывиарукиаруи ариывраирыфиарыиа", state: "В очереди", author: "Ivanov A.V" }
+                    { id: 1, date: "12.12.2026", adress: "Kommunisticheskiy 120", office: "212", description: "Монтаж монтаж Монтаж монтаж Монтаж монтаж Монтаж монтаж Монтаж монтаж Монтаж монтаж Монтаж монтаж Монтаж монтаж Монтаж монтаж Монтаж монтаж Монтаж монтаж ", state: "Выполняеться", author: "Ivanov A.V" },
+                    { id: 2, date: "12.12.2026", adress: "Choros-Gurkina 4", office: "212", description: "Смонтировапть много много ыфоарыивариуриари арывиарукиаруи ариывраирыфиарыиа", state: "В очереди", author: "Ivanov A.V" }
                 ]
             }
         }

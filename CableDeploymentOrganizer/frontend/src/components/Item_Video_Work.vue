@@ -2,12 +2,13 @@
     <tr>
         <td>{{ videoWork.date }}</td>
         <td>{{ videoWork.adress}}</td>
-        <td text-align: justify>{{ videoWork.description}}</td>
+        <td>{{ videoWork.office}}</td>
+        <td>{{ videoWork.description}}</td>
         <td>{{ videoWork.state}}</td>
         <td>{{ videoWork.author}}</td>
-        <td>
+        <td class="align-middle">
             <div class="d-flex justify-content-center">
-                <button class="btn btn-primary me-1" type="button">
+                <button class="btn btn-secondary btn-sm" type="button">
                     Подробнее
                 </button>
             </div>

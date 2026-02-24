@@ -4,17 +4,17 @@
             <div class="container text-center">
                 <h1 class="h4 mb-4 text-white">Очередь монтажных работ</h1>
                 <ul class="nav nav-pills nav-fill justify-content-center">
-                    <li class="nav-item">
+                    <li class="nav-item me-2">
                         <router-link to="/LAN"
-                                     class="nav-link"
+                                     class="nav-link text-white border border-primary"
                                      :class="{ active: $route.path === '/LAN' }">
                             Локальная сеть
                         </router-link>
                     </li>
 
-                    <li class="nav-item">
+                    <li class="nav-item me-2">
                         <router-link to="/Video"
-                                     class="nav-link"
+                                     class="nav-link text-white border border-primary"
                                      :class="{ active: $route.path === '/Video' }">
                             Видеонаблюдения
                         </router-link>
@@ -22,7 +22,7 @@
 
                     <li class="nav-item">
                         <router-link to="/Create"
-                                     class="nav-link"
+                                     class="nav-link text-white border border-primary"
                                      :class="{ active: $route.path === '/Create' }">
                             Создать заявку
                         </router-link>

@@ -5,12 +5,15 @@
         <form @submit.prevent="submitForm">
             <div class="mb-3">
                 <label for="address" class="form-label">Адрес</label>
-                <input type="text"
-                       class="form-control"
-                       id="address"
-                       v-model="formData.address"
-                       placeholder="Введите адрес объекта"
-                       required>
+                <select class="form-select" id="address" v-model="formData.address">
+                    <option value="1">Коммунистический проспект, 120</option>
+                    <option value="2">Коммунистический проспект, 122</option>
+                    <option value="3">Коммунистический проспект, 124/1</option>
+                    <option value="4">Коммунистический проспект, 130</option>
+                    <option value="5">Коммунистический проспект, 140</option>
+                    <option value="6">Чорос-Гуркина, 6</option>
+                    <option value="7">Шоссейная, 33/1</option>
+                </select>
             </div>
 
             <div class="mb-3">
@@ -24,17 +27,6 @@
             </div>
 
             <div class="row mb-3">
-                <!-- Состояние -->
-                <div class="col-md-6">
-                    <label for="status" class="form-label">Состояние</label>
-                    <select class="form-select" id="status" v-model="formData.status">
-                        <option value="Новая">Новая</option>
-                        <option value="В работе">В работе</option>
-                        <option value="Ожидание запчастей">Ожидание запчастей</option>
-                        <option value="Выполнено">Выполнено</option>
-                    </select>
-                </div>
-
                 <!-- Автор -->
                 <div class="col-md-6">
                     <label for="author" class="form-label">Автор</label>
@@ -48,7 +40,7 @@
             </div>
 
             <div class="d-grid gap-2">
-                <button type="submit" class="btn btn-primary btn-lg">Отправить заявку</button>
+                <button type="submit" class="btn btn-primary btn-lg">Создать заявку</button>
             </div>
         </form>
 
@@ -105,12 +97,12 @@
 </script>
 
 <style scoped>
-        /*
+    /*
       Если вы хотите использовать только Bootstrap, этот блок можно удалить.
       Но я добавил ограничение ширины, чтобы форма не была слишком широкой на больших экранах.
     */
-        .request-form-container {
-            max-width: 600px;
-            margin: 0 auto; /* Центрирование формы */
-        }
+    .request-form-container {
+        max-width: 600px;
+        margin: 0 auto; /* Центрирование формы */
+    }
 </style>

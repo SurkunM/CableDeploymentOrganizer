@@ -2,12 +2,13 @@
     <tr>
         <td>{{ lanWork.date }}</td>
         <td>{{ lanWork.adress}}</td>
-        <td text-align: justify>{{ lanWork.description}}</td>
+        <td>{{ lanWork.office}}</td>
+        <td>{{ lanWork.description}}</td>
         <td>{{ lanWork.state}}</td>
         <td>{{ lanWork.author}}</td>
-        <td>
+        <td class="align-middle">
             <div class="d-flex justify-content-center">
-                <button class="btn btn-primary me-1" type="button">
+                <button class="btn btn-secondary btn-sm" type="button">
                     Подробнее
                 </button>
             </div>
